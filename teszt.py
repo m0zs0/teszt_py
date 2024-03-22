@@ -1,4 +1,9 @@
-#1
+def osszegzes(l):
+    sum=0
+    for szam in l:
+        sum+=szam
+    return sum
+        
 def filet_beolvas():
     with open("adatok.txt", "r", encoding="UTF-8") as fm:
         lista=[]
@@ -7,4 +12,6 @@ def filet_beolvas():
     return lista
     
 szamok=filet_beolvas()
-print(szamok)
+osszeg = osszegzes(szamok)
+print(osszeg)        
+
